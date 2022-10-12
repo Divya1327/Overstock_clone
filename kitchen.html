@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#navbar{
+        width: 100%;
+        margin-bottom: 50px;
+        position:fixed;
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        background-color: rgb(235, 232, 232);
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        background-color: white;
+    }
+    #nav3 > div:nth-child(1) > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+      
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;   
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #red >a{
+        color: red;
+    }
+
+      #kitchen{
+        width:80%;
+        margin:auto;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows:(repeat(8,auto));
+         gap:20px;
+         /* border: 1px solid red; */
+         text-align: center;
+      }
+      #kitchen>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      img{
+        width:100%
+        
+      }
+      button{
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        background-color: #FB5772;
+        border-radius: 5px;
+        border:1px solid transparent;
+      }
+      #div1{
+        
+        background-color:#545658; 
+     color:white;
+      padding: 20px 0px 0px 80px;
+       /* border: 1px solid red; */
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(1,auto);
+       font-size: 13px;
+    }
+    </style>
+</head>
+<body>
+    <div class="divya">
+        <a href="./kitchen1.html"></a>
+        <a href="./kitchenProduct.html"></a>
+        <a href="./kitchenCartPage.html"></a>
+        </div>
+  <div id="navbar">
+    <div id="nav1">
+        <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+    </div>
+    <div  id="nav2">
+        <label for="">Ships to:</label>
+        <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+        <label for="">India</label>
+    </div>
+    <div id="nav3">
+        <div>
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+        </div>
+        <div>
+            <input type="text" placeholder="search">
+        </div>
+        <div id="acc_section">
+            <div>
+                <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                <div>Account</div>
+            </div>
+            <div>
+                <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                <div>Lists</div>
+            
+            </div>
+            <div>
+                <div class="top"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                <div>Cart</div>
+            </div>
+        </div>
+    </div>
+    <div id="nav4">
+        <div style="color:black"><a href="furniture.html">Furniture</a></div>
+        <div style="color:black"><a href="rugs.html">Rugs</a></div>
+        <div style="color:black"><a href="decor.html">Decor</a></div>
+        <div style="color:black"><a href="bedding.html">Bedding</a></div>
+        <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+        <div style="color:black"><a href="kitchen1.html">Kitchen</a></div>
+        <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+        <div style="color:black"><a href="lighting.html">Lighting</a></div>
+        <div style="color:black">Kids & Baby</div>
+        <div style="color:black">More</div>
+        <div style="color:black">Ideas</div>
+        <div id="red">Sales & Deals</div>
+    </div>
+</div>
+<br>
+<br><br><br><br><br><br><br>
+<br><br><br>
+<div id="container"></div>
+    <select name="" id="filter">
+        <option value="All">All Products</option>
+        <option value="Large Appliances">Large Appliances</option>
+        <option value="Kitchen & Dining">Kitchen & Dining</option>
+        <option value="sale">sale</option>
+        <option value="Dinnerware">Dinnerware</option>
+        <option value="Cookware">Cookware</option>
+        <option value="Serveware">Serveware</option>
+    </select>
+    <div id="kitchen">
+
+    </div>
+    <div id="div1">
+      <div>
+          <p>MY ACCOUNT</p>
+          <p>Orders & Returns</p>
+          <p>Email Preferences</p>
+          <p>Account Settings</p>
+      </div>
+      <div>
+          <p>LET US HELP</p>
+          <p>Contact Customer Care</p>
+          <p>Shipping Information</p>
+          <p>Return Policy</p>
+          <p>International Help</p>
+          <p>Accessibility</p>
+      </div>
+      <div>
+          <p>COMPANY INFORMATION</p>
+          <p>About Overstock™</p>
+          <p>Contact Us</p>
+          <p>Careers</p>
+          <p>Investor Relations</p>
+          <p>Sell Your Products</p>
+          <p>Supply Chain Transparency</p>
+      </div>
+      <div>
+          <p>MORE WAYS TO SHOP</p>
+          <p>Tips & Ideas</p>
+          <p>Deals
+          </p>
+          <p>Clearance</p>
+          <p>New Arrivals</p>
+      </div>
+  </div>
+</body>
+</html>
+
+<script>
+kitArr=[
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/70f94a5ead62c4564d90be8c6bf32b88e40810c4/Newair-44lb.-Nugget-Countertop-Ice-Maker-with-Self-Cleaning-Function%2C-Refillable-Water-Tank%2C-Perfect-for-Kitchens%2C-Offices%2C-Etc.jpg?imwidth=480&impolicy=medium",
+name:"Countertop Ice Maker ",
+price:"44049",
+category:"sale",
+productId:"kit1",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/14988170/20-Piece-Laguiole-Faux-Ivory-Flatware-Set-by-French-Home-29c6f1a4-9482-4bbc-a62e-9d5346cce42b_600.jpg?imwidth=480&impolicy=medium",
+name:"Laguiole Faux Ivory ",
+price:"5634",
+category:"sale",
+productId:"kit2",
+quantity:"1",
+},
+{
+    Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/de1bb342786149524c932a7a608cf7d81ae29125/Banded-Design-Runner.jpg?imwidth=480&impolicy=medium",
+name:"Banded Design Runner",
+price:"2817",
+category:"sale",
+productId:"kit3",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/957e76202f5b62fbab98f3dfa4babc1262c4aafd/Euro-Ceramica-White-Essential-16-Piece-Porcelain-Dinnerware-Set.jpg?imwidth=480&impolicy=medium",
+name:"Euro Ceramica White",
+price:"5494",
+category:"Dinnerware",
+productId:"kit4",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/f4d4fbd7c18e1b13b2b50d14588d13b43950d4cd/MALACASA-Flora-Porcelain-Dinnerware-Set-%28Service-for-6%29.jpg?imwidth=480&impolicy=medium",
+name:"MALACASA Flora Porcelain",
+price:"9815",
+category:"Dinnerware",
+productId:"kit5",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/7e57f3ec471b0e6c7ce6b12d22e3707a15926f2b/KitchenAid-Hard-Anodized-Nonstick-Frying-Pan%2C-10-Inch%2C-Onyx-Black.jpg?imwidth=480&impolicy=medium",
+name:"Anodized Nonstick Frying Pan",
+price:"4038",
+category:" Cookware",
+productId:"kit6",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/5bfff449a1db214d05ae2a30dc28a0a4b881c213/Tramontina-12-in-Enameled-Cast-Iron-Series-1000-Covered-Skillet---Gradated-Cobalt.jpg?imwidth=480&impolicy=medium",
+name:" Enameled Cast-Iron Series",
+price:"6571",
+category:"Cookware",
+productId:"kit7",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/a6edfacc5afa3fac4250ea4c0a26ef2694838811/GreenPan-Chatham-Open-Frypan-Set.jpg?imwidth=480&impolicy=medium",
+name:"GreenPan Chatham Open Frypan ",
+price:"5776",
+category:"Cookware",
+productId:"kit8",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/5bae2bc70972eae43318847b72beae8a0837196a/Stove-Top-Cover.jpg?imwidth=480&impolicy=medium",
+name:"Farmhouse Noodle Board Rustic",
+price:"8066",
+category:" Serveware",
+productId:"kit9",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/bbe2675e3c58627f4c05f51d988075680291404f/MALACASA-Sweet-Time-3-tier-Cupcake-Tower-Stand.jpg?imwidth=480&impolicy=medium",
+name:"Cupcake Tower Stand",
+price:"2696",
+category:"Serveware",
+productId:"kit10",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/10123399/Picnic-at-Ascot-Vienna-Bamboo-Serving-Set-8e3427f4-23f0-4e88-8a15-991e0996db96_600.jpg?imwidth=480&impolicy=medium",
+name:"Vienna Bamboo Cheese Serving Set",
+price:"6427",
+category:"Serveware",
+productId:"kit11",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/1100619efe44a2adbb065014895b018f494ffcc6/Caynel-4-Liter-Portable-Mini-Fridge-for-Home%2C-Office-and-Car%2C-AC-DC-Thermoelectric-System.jpg?imwidth=480&impolicy=medium",
+name:" Mini Fridge for Home",
+price:"4620",
+category:"Large Appliances",
+productId:"kit12",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/3c557e5adb214cc5a16d99216a8b92c1f872fe53/Built-in-30%22-Gas-Cooktop---5-Sealed-Burners-Cook-Tops-in-Stainless-Steel.jpg?imwidth=480&impolicy=medium",
+name:"Sealed Burners Cook Tops",
+price:"32886",
+category:"Large Appliances",
+productId:"kit13",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/873ac96165e1224dc43f0b4222e6b048a0e8e93d/Equator-White--Silver-Trim-13-pound-Capacity-Dryer.jpg?imwidth=480&impolicy=medium",
+name:"Compact Electric Dryer Auto dry",
+price:"5020",
+category:"Large Appliances",
+productId:"kit14",
+quantity:"1",
+},
+{
+    Image:"https://ak1.ostkcdn.com/images/products/16964511/Empava-30-4-Booster-Burners-Tempered-Glass-Electric-Induction-Cooktop-70dee67a-de5e-417e-855d-56f87e41d29e_600.jpg?imwidth=480&impolicy=medium",
+    name:" Glass Electric Induction Cooktop",
+    price:"45276",
+    category:"Large Appliances",
+    productId:"kit15",
+    quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/b17dc01d086e91292fba8b58a8c34b2a58b12b59/5-Tier-Kitchen-Bakers-Rack-Utility-Storage-Shelf-Microwave-Oven-Stand%2C-Industrial-Microwave-Cart-Kitchen-Stand-with-Hutch.jpg?imwidth=480&impolicy=medium",
+name:" Kitchen Stand with Hutch",
+price:"11646",
+category:"Kitchen & Dining",
+productId:"kit16",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/7121cb16d793b54045152dc2884d39dd55f318ec/TRINITY-Basics-EcoStorage%E2%84%A2-5-Tier-Pantry-Rack-24%22-x-12%22-x-55.5%22-w--Wheels%2C-NSF-Certified%2C-Chrome.jpg?imwidth=480&impolicy=medium",
+name:"TRINITY Basics EcoStorage Chrome",
+price:"8722",
+category:"Kitchen & Dining",
+productId:"kit17",
+quantity:"1",
+
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/c381fa5bcaba681600bee1027804a0a7e66c4157/Siterra-Painter%27s-Palette-16-Piece-Dinnerware-Set.jpg?imwidth=480&impolicy=medium",
+name:"Siterra Painter's Palette",
+price:"2000",
+category:"Kitchen & Dining",
+productId:"kit18",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/28844335/Signature-Housewares-Expressions-Flatware-Storage-Holder-Black-Matte-N-A-149543bc-853e-423b-89e4-864b9b3f61a5_600.jpg?imwidth=480&impolicy=medium",
+name:"Flatware Storage Holder",
+price:"3544",
+category:"Kitchen & Dining",
+productId:"kit19",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/10811769/InFuzeH20-Fruit-Infuser-Water-Pitcher-1285b2e8-00b8-4e67-808f-fb47392d63b8_600.jpg?imwidth=480&impolicy=medium",
+name:"Fruit-Infuser Clear",
+price:"3281",
+category:"Serveware",
+productId:"kit20",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/97d24aa1d70da83afdf198786c2143398b3fe0ba/Artvigor-Porcelain-Teapot%2C-Tea-for-One-Set.jpg?imwidth=480&impolicy=medium",
+name:"Porcelain Tea & Coffee",
+price:"3797",
+category:"Serveware",
+productId:"kit21",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/90fbdc8f91007a598ac036d7ac642bbef53c2960/Vancasso-Non-Stick-Cast-Iron-Oval-Dutch-Oven.jpg?imwidth=480&impolicy=medium",
+name:"Cast Iron Oval Dutch",
+price:"6597",
+category:"Cookware",
+productId:"kit22",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/43bba710c08298792a4c55e9de38a5d50920ca83/Rachael-Ray-Hard-Enamel-Nonstick-14-Piece-Cookware-Set%2C-Marine-Blue.jpg?imwidth=480&impolicy=medium",
+name:"Hard Enamel Nonstick",
+price:"16508",
+category:"Cookware",
+productId:"kit23",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/25435291/Baking-Pans-2-Piece-Nonstick-Rectangular-Cookware-Set-Silicone-Grip-Handles-by-Classic-Cuisine-fe1c684e-d8ec-4869-a54e-9ed084ed5647_600.jpg?imwidth=480&impolicy=medium",
+name:"Baking Pans-2",
+price:"2494",
+category:"Cookware",
+productId:"kit24",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/27159ec52b6f67dbf6ded9679e22079d944ed7d9/Classic-Design-Charger-Plate-%28Set-of-4%29.jpg?imwidth=480&impolicy=medium",
+name:"Charger Plates",
+price:"1848",
+category:"Dinnerware",
+productId:"kit25",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/97615aefd0369db06730905a66619c35ad7d3d53/Euro-Ceramica-FreshCatch-12-Piece-Dinnerware-Set-%28Service-for-4%29.jpg?imwidth=480&impolicy=medium",
+name:"Ceramica FreshCatch ",
+price:"7542",
+category:"Dinnerware",
+productId:"kit26",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/319d6cd5503fc97038e7c72d7d2fa88328c794f9/3-drawer-Drop-Leaf-Kitchen-Cart.jpg?imwidth=480&impolicy=medium",
+name:"3-drawer Drop Leaf",
+price:"35848",
+category:"sale",
+productId:"kit27",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/12268809/Lorren-Home-Trend-Choice-of-Color-Multicolored-6-piece-Wine-Goblet-Set-f2ec0b7d-f865-4544-84a5-1e8e6b450e5a_600.jpg?imwidth=480&impolicy=medium",
+name:"Wine Goblet Set",
+price:"3582",
+category:"sale",
+productId:"kit28",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/79ecb51799cde82ae493150858b2d3684d42bdad/6.3Qt-Electric-Tilt-Head-Food-Stand-Mixer-6-Speed-660W.jpg?imwidth=480&impolicy=medium",
+name:"Food Stand Mixer",
+price:"10699",
+category:"sale",
+productId:"kit29",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/23ff3b41f052226402ee2ab026cffa192851bc13/Porch-%26-Den-Jefferson-Glass-Sliding-Door-Stackable-Cabinet.jpg?imwidth=480&impolicy=medium",
+name:"Glass Sliding Door",
+price:"14771",
+category:"sale",
+productId:"kit30",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/15e19eed80faa0a29e3b1ce964289f7c4d8b63b8/Dinnerware-Storage-Containers%2C-Padded-Dish-Cases---Stackable-Holders-for-Plates%2C-Cups%2C-Flatware%2C-Stemware%2C-%26-Platter-Sets.jpg?imwidth=480&impolicy=medium",
+name:"Dinnerware Storage Containers",
+price:"4144",
+category:"sale",
+productId:"kit31",
+quantity:"1",
+},
+{
+Image:"https://ak1.ostkcdn.com/images/products/is/images/direct/665d4f4b0f1a22aa7083c93ff6c76b07efb15bbd/Clifton-Tall-Pantry.jpg?imwidth=480&impolicy=medium",
+name:"Clifton Tall Pantry",
+price:"43012",
+category:"sale",
+productId:"kit32",
+quantity:"1",
+}
+
+]
+
+// let kitArr=[];
+ let kitCont=document.querySelector("#kitchen")
+let kitFilter=document.querySelector("#filter")
+let kitchenKingLS=JSON.parse(localStorage.getItem("kitPage"))||[]
+
+function displayKitchen(kitArr){
+
+kitCont.innerHTML=""
+kitArr.forEach(function(elem){
+let kit=document.createElement("div");
+let pic=document.createElement("img");
+pic.setAttribute("src",elem.Image);
+let name=document.createElement("h3");
+name.innerText=elem.name;
+let price=document.createElement("p");
+price.innerText=elem.price;
+let category=document.createElement("p");
+category.innerText=elem.category;
+
+
+// let plus=document.createElement("button");
+// plus.innerText="-";
+// plus.addEventListener("click",plusFunction)
+
+// let minus=document.createElement("button");
+// minus.innerText="+";
+
+
+let addToCart=document.createElement("button");
+addToCart.innerText="Add To Cart";
+
+
+addToCart.addEventListener("click",function(){
+if(addToCartFunc(elem.productId)===true){
+alert ("Product Added Successfully");
+kitchenKingLS.push(elem);
+localStorage.setItem("kitPage",JSON.stringify(kitchenKingLS));
+}else{
+alert ("Product Already in the Cart");
+}
+})
+
+kit.append(pic,name,price,category,addToCart)
+kitCont.append(kit);
+
+})
+}
+displayKitchen(kitArr)
+
+filter.addEventListener("change",function(){
+if(filter.value=="All"){
+    displayKitchen(kitArr)
+}else{
+let filtered=kitArr.filter
+(function(elem){
+    return elem.category===filter.value;
+})
+displayKitchen(filtered)
+}
+
+})
+
+function addToCartFunc (id){
+for(let i=0;i<kitchenKingLS.length;i++){
+if(kitchenKingLS[i].productId===id){
+return false;
+}
+}
+return true;
+}
+
+// function plusFunction(){
+//   let counter=0;
+//   let quantity=document.createElement("h3");
+// quantity.innerText=elem.quantity
+// counter++
+// localStorage.setItem("localCounter",counter);
+// }
+
+
+</script>

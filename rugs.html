@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding:15px 0px;
+    border: none;
+}
+
+      #div1>div>  p{
+          cursor: pointer; 
+          font-size: 20px; 
+           padding:5px ;
+           margin-top:-20px; 
+          
+        }
+        #div1>div>  p:hover{
+            background-color:#f9fafb;
+        }
+        #div1{
+            display: flex;
+            width:90%;
+            margin:auto;
+        }
+        #div1>div>p:last-child{
+            font-weight: bold;
+            color:#c7202c;
+        }
+        #div1>div:nth-child(1){
+            /* background-color:gray; */
+            margin-right: 10px;
+            width:25%;
+            /* border:1px solid black; */
+        }
+        #div1>div:nth-child(2){
+       width:50%;
+       margin-right: 20px;
+       /* border:1px solid black; */
+        }
+        #div1>div:nth-child(2)>img{
+            width:100%;
+            /* height:100%; */
+            cursor: pointer;
+        }
+        #div1>div:nth-child(3){
+            width:22.5%;
+            text-align: center;
+            
+            /* border:1px solid red */
+        }
+        #div1>div:nth-child(3)>div>p{
+           
+            font-size: 30px;
+            margin-bottom: -20px;
+        }
+        #div1>div:nth-child(3)>div:nth-child(1){
+            border:1px solid transparent;
+            height: 50%;
+            background-color: #cee8ff;
+            margin-bottom: 10px;
+         
+            
+        }
+        #div1>div:nth-child(3)>div:nth-child(1)>img{
+            width:100%;
+            cursor: pointer;
+        }
+        #div1>div:nth-child(3)>div:nth-child(2)>img{
+            width:100%;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+        #div1>div:nth-child(3)>div:nth-child(2){
+            background-color:#eaeaea;
+            height: 50%;
+            /* border: 1px solid  */
+        }
+        
+     #div2{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:10px;
+     }
+     #div2>div{
+         border: 1px solid transparent 
+     }
+     #div2>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+div+h2{
+    text-align: center;
+    margin:50px 
+}
+    
+#div3{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+     /* #div3>div{
+        border: 1px solid black;
+     } */
+     #div3>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+     #div4{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-bottom: 65px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+     /* #div4>div{
+        border: 1px solid black;
+     } */
+     #div4>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+     /* #div5{
+        width:90%;
+        margin:auto;
+        display: flex;
+     } */
+
+     #div5{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+    /* #div5>div>img{
+        width:100%;
+        cursor: pointer;
+     } */
+        
+     #div6{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+     #div5>div:nth-child(1)>img{
+        width:100%
+     }
+     #div6>div:nth-child(2)>img{
+        width:100%
+     }
+     p+button{
+    width:15%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+   }
+
+     #div7{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-bottom: 65px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap:10px;
+     }
+     /* #div7>div{
+        border: 1px solid black;
+     } */
+     #div7>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+     #div8{
+         background-color:#545658; 
+      color:white;
+       padding: 50px 0px 0px 80px;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+     }
+     /* #div8>div{
+
+        border:1px solid black;
+        
+     } */
+
+
+     #rugs{
+      margin-left: 75px;
+      padding-top: 50px;
+    
+        
+     }
+     #navbar{
+        width: 100%;
+        /* border: 1px solid red; */
+        position:sticky;
+        top:0px;
+        background-color: white;
+      
+        
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        /* background-color: rgb(235, 232, 232); */
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        /* justify-content:; */
+    }
+    #nav3 > div:nth-child(1) > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+        /* border: 1px solid blue; */
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        /* border: 1px solid blue; */
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+        /* border: 1px solid; */
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+        /* border: 1px solid green; */
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        /* border: 1px solid red; */
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+        /* border: 1px solid red; */
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+       
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;
+       
+    }
+
+    
+    </style>
+</head>
+<body>
+
+ 
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div  id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                    <div>Account</div>
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div>Lists</div>
+                
+                </div>
+                <div>
+                    <div class="top" id="cartlogo"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div><a href="cart.html">Cart</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen1.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div>
+
+
+
+
+
+    <h1 id="rugs">Rugs</h1>
+    <div id="div1">
+        <div>
+       <h2>Featured Categories</h2>
+        <p id="p">Area Rugs</p>
+        <p>Rug Pads</p>
+        <p>Shag Rugs</p>
+        <p>Kitchen Rugs & Mats</p>
+        <p>Stair Treads</p>
+        <p>One of a Kind Rugs</p>
+        <p>Machine Washable</p>
+        <p>Handmade Rugs</p>
+        <p>Flat Weave Rugs</p>
+        <p>Outdoor Rugs</p>
+        <p>Runner Rugs</p>
+        <p>Kids & Tween Rugs</p>
+        <p>Door Mats</p>
+        <p>Bath Mats & Rugs</p>
+        <p>Persian Rugs</p>
+        <p>Shop New Arrivals</p>
+        <p>Shop All Rugs on Sale</p>
+ </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="">
+        </div>
+        <div>
+            <div>
+                <p>Need Inspiration?</p>
+                <h1>Virtual Showroom</h1>
+                <img src="https://ak1.ostkcdn.com/img/mxc/2022-04-12-temporary-virtual-showcase.png?imwidth=384" alt="">
+            </div>
+           <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_RUGS_MM_02.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+          <p>Save on</p>
+          <h1>Rug Deals</h1>
+        </div>
+           
+        </div>
+    </div>
+    <h2>Shop Popular Rug Sizes</h2>
+<div id="div2">
+<!-- <h2>Shop Popular Rug Sizes</h2> -->
+</div>
+<h2>Shop Popular Rug Colors</h2>
+<div id="div3">
+
+</div>
+
+<h2>Shop Popular Rug Styles</h2>
+
+<div id="div4">
+
+</div>
+<div id="div5">
+    <div><img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_688x444_BG01.jpg?imwidth=1024&impolicy=medium" alt=""></div>
+    <div>
+    <h2>Tips on Buying the Best Outdoor Rug</h2>
+    <p>Whether for your porch, your patio, or even your living room, outdoor rugs are built to last. With so many stylish yet functional outdoor rugs available, you may not know which rug is best for you. Let these tips for finding weather-resistant and waterproof outdoor rugs be your guide to your most stylish patio yet.</p>
+   <button>Read More</button>
+</div>
+   
+</div>
+
+<div id="div6">
+    <div>
+    
+        <h2>Top 10 Boho Rugs</h2>
+        <p> Both casual and inviting, boho style exudes worldly flair. Whether you're a full-fledged bohemian or are just itching for some extra color in your spring decor, a boho rug is an easy way to inject your space with some free-spirited personality. Read on for our top 10 favorite boho rugs.</p>
+       <button>Read More</button></div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_688x444_BG01.jpg?imwidth=1024&impolicy=medium" alt="">
+</div >
+   
+</div>
+<div id="div7">
+    
+</div>
+<div id="div8">
+    <div>
+        <p>MY ACCOUNT</p>
+        <p>Orders & Returns</p>
+        <p>Email Preferences</p>
+        <p>Account Settings</p>
+    </div>
+    <div>
+        <p>LET US HELP</p>
+        <p>Contact Customer Care</p>
+        <p>Shipping Information</p>
+        <p>Return Policy</p>
+        <p>International Help</p>
+        <p>Accessibility</p>
+    </div>
+    <div>
+        <p>COMPANY INFORMATION</p>
+        <p>About Overstock™</p>
+        <p>Contact Us</p>
+        <p>Careers</p>
+        <p>Investor Relations</p>
+        <p>Sell Your Products</p>
+        <p>Supply Chain Transparency</p>
+    </div>
+    <div>
+        <p>MORE WAYS TO SHOP</p>
+        <p>Tips & Ideas</p>
+        <p>Deals
+        </p>
+        <p>Clearance</p>
+        <p>New Arrivals</p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    rugsData=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX1_3x5-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"3'x 5' Area Rugs"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX2_4x6-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"4'x 6' Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX3_5x8-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"5'x 8' Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX4_6x9-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"6'x 9' Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX5_7x9-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"7'x 9' Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX6_8x10-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"8'x 10' Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX7_9x12-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"9' x 12' Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX8_10x14-480x480_2.png?imwidth=400&impolicy=medium",
+            button:"10' x 14' Area Rugs"
+        },
+    ]
+     
+    rugsData2=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXA1_Blue_Rugs-336x336_2.png?imwidth=400&impolicy=medium",
+            button:"Blue Rugs"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXA2_Grey_Rugs-336x336_2.png?imwidth=400&impolicy=medium",
+            button:"Grey Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXA3_Ivory_Rugs-336x336_2.png?imwidth=400&impolicy=medium",
+            button:"Ivory Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXA4_Red_Rugs-336x336_2.png?imwidth=400&impolicy=medium",
+            button:"Red Rugs"
+        }
+         
+    ]
+  
+    rugsData3=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB1_Bohemian-Eclectic-lifestyle-336x336.png?imwidth=400&impolicy=medium",
+            button:"Bohemian & Eclectic Area Rugs"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB2_Modern-Contemporary-lifestyle-336x336.png?imwidth=400&impolicy=medium",
+            button:"Modern & Contemporary Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB3_Vintage-336x336.png?imwidth=400&impolicy=medium",
+            button:"Vintage Area Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB4_Shag-336x336.png?imwidth=400&impolicy=medium",
+            button:"Shag Area Rugs"
+        }
+         
+    ]
+  
+    rugsData4=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER1_Area-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Area Rugs"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER2_Rug-Pads-267x267.png?imwidth=200&impolicy=medium",
+            button:"Rug Pads"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER3_Shag-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Shag Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER4_Kitchen-rugs-mats-267x267.png?imwidth=200&impolicy=medium",
+            button:"Kitchen Rugs & Mats"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-rugs_otherPopular4.jpg?imwidth=200&impolicy=medium",
+            button:"Stair Treads"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-rugs_otherPopular8.jpg?imwidth=200&impolicy=medium",
+            button:"Flat Weave Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER6_One-of-a-kind-267x267.png?imwidth=200&impolicy=medium",
+            button:"One of a Kind Rugs"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER7_Machine-Washable-267x267.png?imwidth=200&impolicy=medium",
+            button:"Machine Washable"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-rugs_otherPopular7.jpg?imwidth=200&impolicy=medium",
+            button:"Homemade Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER10_Outdoor-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Outdoor Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER11_Runner-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Runner Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER12_Kids-tween-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Kids & Tween Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-rugs_otherPopular12.jpg?imwidth=200&impolicy=medium",
+            button:"Door Mats"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER14_Bath-mats-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Bath Mats & Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER15_Persian-rugs-267x267.png?imwidth=200&impolicy=medium",
+            button:"Persian Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER16_Shop-new-arrivals-267x267.png?imwidth=200&impolicy=medium",
+            button:"Shop New Arrivals"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_OTHER17_Sales-267x267.png?imwidth=200&impolicy=medium",
+            button:"Shop All Rugs on Sale"
+        }
+      
+    ]
+
+
+
+   
+
+displayRugs(rugsData)
+ 
+function displayRugs(data){
+     rugsData.forEach(function(el){
+        let div2 = document.querySelector('#div2');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+}
+
+   rugColor(rugsData2)
+
+    function rugColor(data){
+        rugsData2.forEach(function(el){
+        let div2 = document.querySelector('#div3');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+    }
+
+
+    rugStyle(rugsData3)
+    function rugStyle(data){
+        rugsData3.forEach(function(el){
+        let div2 = document.querySelector('#div4');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+    }
+
+
+    shopMore(rugsData4)
+
+    function shopMore(data){
+        rugsData4.forEach(function(el){
+        let div2 = document.querySelector('#div7');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+    }
+    let div= document.querySelectorAll('div');
+
+    for(let i=0;i<div.length;i++)
+    {
+        div[i].addEventListener("click", rugProduct)
+    }
+
+    function rugProduct(){
+       window.location.href="rugProduct.html"
+    }
+</script>

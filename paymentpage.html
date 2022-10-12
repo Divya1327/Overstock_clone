@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-style: italic;
+            color: blue;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #card{
+            /* border: 1px solid red; */
+            width:25%;
+            margin:auto;
+           
+            text-align: center;
+            background-color: #bbdefb;
+            border-radius: 50PX;
+            padding: 50px;
+            font-size: 20px;
+        }
+        input{
+          width:10%;
+        }
+        input+button{
+            display: block;
+            margin-top: 20px;
+            margin-left:110px;
+           
+            background-color: #666666;
+            color:white;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+       
+        p+input{
+          width:60%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete Your Payment</h1>
+    <div id="card">
+        <p>Enter your card Number</p>
+        <input type="number" placeholder="Enter your card Number">
+        <p>Expiry:-</p>
+        <select name="" id="mon">
+            <option value="mon">Months</option>
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="march">Mar</option>
+            <option value="april">Apr</option>
+            <option value="may">May</option>
+            <option value="june">june</option>
+            <option value="july">july</option>
+            <option value="aug">Aug</option>
+            <option value="sep">Sep</option>
+            <option value="oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+
+
+        </select>
+        <select name="" id="">
+            <option value="">
+                Years
+            </option>
+            <option value="2024">2023</option>
+            <option value="2024">2024</option>
+            <option value="2024">2025</option>
+            <option value="2024">2026</option>
+            <option value="2024">2027</option>
+            <option value="2024">2028</option>
+        </select>
+        <input type="password">
+        <button>Proceed for Payment</button>
+
+    </div>
+</body>
+</html>
+<script>
+
+    // let obj={
+    // card:123456781234,
+    // cvv:123
+    // }
+    let check = document.querySelector('button');
+    check.addEventListener("click",function(){
+         alert("Your otp is 1234")
+        window.location.href="otp.html"
+    })
+</script>

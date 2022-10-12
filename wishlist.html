@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+    #navbar{
+        width: 100%;
+        margin-bottom: 50px;
+        position: fixed;
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        background-color: rgb(235, 232, 232);
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        background-color: white;
+    }
+    #nav3 > div > a > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+     border: 1px solid;
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;   
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #red >a{
+        color: red;
+    }
+
+#container{
+    width: 50%;
+    margin: auto;
+}
+#container > div{
+    height: 272px;
+    display: flex;
+    margin-bottom: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#container > div > div{
+    width: 40%;
+}
+h1{
+    text-align: center;
+}
+#container{
+    width: 50%;
+}
+#container > div > div > p{
+    font-size: 20px;
+}
+img{
+    width: 90%;
+}
+    #block8{
+        width:100%;
+        height:350px;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(90, 89, 89);
+    }
+    #block8 > div{
+        width:15%;
+        height: 70%;
+        margin: auto;
+        color: white;
+        background-color: rgb(90, 89, 89);
+    }
+    #block9{
+        width:100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(61, 61, 69);
+    }
+
+    #block9 > div{
+        width:30%;
+        color: white;
+        text-align: left;
+        margin-top: 20px;
+    }
+    #block9 > div:first-child{
+       margin-left: 70px;
+    }
+    #block9 > div:last-child{
+        display: flex;
+        justify-content: space-around;
+    }
+    #block9 > div:last-child > div{
+        width: 35%;
+        height: 50%;
+        margin: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div  id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <a href="index.html"> <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="" width="30%"></a>
+                 </div>    
+ 
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                  <div class="top"><img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"alt=""></div>
+                    <div><a href="loginpage.html">Account</a></div>
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div><a href="wishlist.html">Lists</a></div>
+                
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div><a href="addtocart.html">Cart</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br>
+    <h1>My Wishlists</h1><br>
+        <div id="container"></div>
+    <br><br>
+    <div id="block8">
+        <div>
+            <h4>MY  ACCOUNT</h4>
+            <p>Order and returns</p>
+            <p>Email Preferences</p>
+            <p>Account settings</p>
+        </div>
+        <div>
+            <h4>LET US HELP</h4>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h4>COMPANY  INFORMATION</h4>
+            <p>About Overstock</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+        </div>
+        <div>
+            <h4>MORE WAYS TO SHOP</h4>
+            <p>Tips and Ideas</p>
+            <p>Deals</p>
+            <p>Clearances</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>Privacy Policy</div>
+            <div>Terms & conditions</div>
+            <div>*Promotion Terms</div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    let LScart = JSON.parse(localStorage.getItem("cartpage")) || [];
+    let prod = document.getElementById("container");
+    
+    function displayprod(productdata)
+{
+    prod.innerHTML = "";
+    productdata.forEach (function (element) {
+        let box = document.createElement("div");
+        let box1 = document.createElement("div");
+        let box2 = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.src = element.image_url;
+
+        let sale = document.createElement("h4");
+        sale.innerText=element.sale;
+        sale.style.color = "red";
+
+        let brand = document.createElement("h3");
+        brand.innerText=element.brand;
+
+        let title = document.createElement("p");
+        title.innerText=element.title;
+
+        let price = document.createElement("h4");
+        price.innerText=element.price;
+
+        let addtocart = document.createElement("button");
+        addtocart.innerText = "Add to Cart" ;
+        addtocart.style.backgroundColor = "rgb(251, 87, 114)";
+        addtocart.style.border = "none";
+        addtocart.style.padding = "7px";
+        addtocart.style.cursor = "pointer";
+        addtocart.style.marginRight = "10px";
+        addtocart.addEventListener("click", function()
+        {
+            if(incart(element.productID)===true)
+            {
+                alert("product added successfully.");
+                LScart.push(element);
+                localStorage.setItem("cartpage", JSON.stringify(LScart));
+            }
+            else 
+            {
+                alert("product already in the cart.")
+            }
+        })
+
+        let deleteProd = document.createElement("button");
+        deleteProd.innerText = "Remove from list" ;
+        deleteProd.style.backgroundColor = "rgb(251, 87, 114)";
+        deleteProd.style.border = "none";
+        deleteProd.style.padding = "7px";
+        deleteProd.style.cursor = "pointer";
+        deleteProd.addEventListener("click", function() {
+            deletedata(element.productID);
+        });
+
+        box1.append(image);    
+        box2.append(brand, title, price, addtocart, deleteProd);
+        box.append(box1, box2);
+        document.querySelector("#container").append(box);
+
+    })
+}
+    displayprod(LScart);
+
+
+function deletedata(id)
+{
+    console.log(id);
+    let deleted = LScart.filter(function(el){
+        return el.productID != id;
+    })
+    LScart = deleted;
+    localStorage.setItem("cartpage", JSON.stringify(LScart));
+    displayprod(LScart);
+}
+
+function incart(id)
+{
+for(let i=0; i<LScart.length; i++)
+{
+    if(LScart[i].productID == id) 
+    {
+        return false;
+    }
+}
+return true;
+}
+</script>
+

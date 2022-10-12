@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account and login page</title>
+    <link rel="icon" style="width:30px" href="https://play-lh.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" type="image/icon type">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        #navbar {
+            width: 100%;
+            margin-bottom: -200px;
+        }
+        
+        #nav1 {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(14, 14, 14);
+            color: white;
+            font-size: 15px;
+            height: 28px;
+            padding-top: 8px;
+        }
+        
+        #nav2 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 35px;
+            background-color: rgb(235, 232, 232);
+        }
+        
+        #nav2>img {
+            width: 2%;
+        }
+        
+        #nav2>input {
+            border-radius: 30%;
+        }
+        
+        #nav3 {
+            border: 1px solid rgb(233, 230, 230);
+            display: flex;
+            background-color: white;
+        }
+        
+        #nav3>div:nth-child(1)>img {
+            width: 30%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        #nav3>div>input {
+            width: 950px;
+            font-size: 20px;
+            margin-left: -400px;
+            margin-right: 50px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            height: 30px;
+            border-radius: 6px;
+            border-color: rgb(237, 237, 237);
+        }
+        
+        #acc_section {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        #acc_section>div {
+            width: 30%;
+        }
+        
+        #acc_Section>div>img {
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        #acc_section>div>div:first-child {
+            height: 70%;
+            cursor: pointer;
+        }
+        
+        .top>img {
+            width: 50%;
+            height: 80%;
+        }
+        
+        #acc_section>div>div:last-child {
+            height: 30%;
+            margin-top: -5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        #nav4 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        
+        #nav4>div {
+            width: auto;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #red>a {
+            color: red;
+        }
+        
+        #signacreate {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #signacreate>form {
+            max-width: 300px;
+            width: 100%;
+            position: relative;
+        }
+        
+        #signacreate>form:first-child {
+            margin-right: 40px;
+        }
+        
+        #signacreate>form:last-child {
+            margin-left: 40px;
+        }
+        
+        #vline {
+            border-left: 1px solid rgb(197, 197, 197);
+            height: 480px;
+            margin-top: 98px;
+        }
+        
+        #createaccount>h3 {
+            font-size: 20px;
+            color: #444444;
+            margin-top: 28px;
+            margin-bottom: 30px;
+        }
+        
+        #createac>h3 {
+            font-size: 20px;
+            color: #444444;
+            margin-top: 28px;
+            margin-bottom: 30px;
+        }
+        
+        label {
+            font-size: 14px;
+            line-height: 45px;
+            color: #626669;
+            font-weight: 400;
+        }
+        
+        #checkboxlast {
+            border: 1px solid gray;
+            border-radius: 2px;
+            background-color: #f9fafc;
+            padding-left: 7%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            line-height: 20PX;
+            width: 92.7%;
+            margin-top: 20px;
+        }
+        
+        #checkboxlast>span:last-child {
+            font-size: 12px;
+            font-weight: 400;
+            color: #626669;
+        }
+        
+        #passline>div>input {
+            max-width: 110px;
+            padding: 9px 10px;
+            border: 0.7px solid #626669;
+            border-radius: 3px;
+            width: 100%;
+        }
+        
+        #passline {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #createaccount>input {
+            max-width: 300px;
+            padding: 10px 10px;
+            border: 0.7px solid #626669;
+            border-radius: 3px;
+            width: 92.25%;
+        }
+        
+        #createac>input {
+            max-width: 300px;
+            padding: 10px 10px;
+            border: 0.7px solid #626669;
+            border-radius: 3px;
+            width: 92.25%;
+        }
+        
+        #firstbutton {
+            margin: 20px 0px;
+            padding: 11px 0px;
+            max-width: 300px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 17px;
+            color: white;
+            background-color: #0272a2;
+            border: 0.7px solid #626669;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        #signin {
+            margin: 20px 0px;
+            padding: 11px 0px;
+            max-width: 300px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 17px;
+            color: white;
+            background-color: rgb(0, 112, 69);
+            border: 0.7px solid #626669;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        hr+button {
+            margin: 20px 0px;
+            padding: 11px 0px;
+            max-width: 300px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 17px;
+            color: #626669;
+            border: 0.7px solid #626669;
+            background-color: rgb(250, 250, 250);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        #footerline {
+            margin-top: 50px;
+            margin-left: 15%;
+        }
+        
+        #footerline>p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        
+        hr {
+            margin: 0px 10px;
+            border: 1px solid rgb(226, 226, 226);
+        }
+        
+        hr+button~p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgb(82, 82, 82);
+            text-align: center;
+        }
+        
+        hr+button~p>a {
+            color: rgb(82, 82, 82);
+            font-weight: bold;
+        }
+        
+        hr+button+p {
+            margin-bottom: 13px;
+        }
+        
+        hr+button>a {
+            text-decoration: none;
+            list-style-type: none;
+            color: #626669;
+        }
+        
+        button+a {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(0, 99, 129);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                    <div>Account</div>
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div>Lists</div>
+
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div>Cart</div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+    <br><br><br>
+    <div id="container"></div>
+    <div id="signacreate">
+        <form id="createaccount">
+            <h3>Create Account</h3>
+            <label>Email Address*</label><br>
+            <input id="email" type="email" placeholder="Email">
+            <div id="passline">
+                <div>
+                    <label>Create Password*</label><br>
+                    <input id="createp" type="password" placeholder="Password">
+                </div>
+                <div>
+                    <label>Confirm Password*</label><br>
+                    <input id="confirmp" type="password" placeholder="Confirm Password ">
+                </div>
+            </div>
+            <div id="checkboxlast">
+                <span><input type="checkbox" id="accept" onclick="ischecked()">
+            </span>
+                <span>Sign up today for exclusive offers from Overstock.com delivered right to your inbox**
+            </span>
+            </div>
+            <button id="firstbutton">Create Account</button>
+            <hr>
+            <button><a href="https://www.overstock.com/cart">Continue as Guest</a></button>
+            <p>By creating an account or continuing as a Guest, you agree to our <a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & Conditions</a> and <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy.</a>
+            </p>
+            <p><a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & Conditions</a> | <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy.</a> </p>
+            <p>**You can unsubscribe at any time</p>
+        </form>
+        <span id="vline"></span>
+        <form id="Signinpage">
+            <div id="createac">
+                <h3>Sign In</h3>
+                <label>Email Address*</label>
+                <input id="email1" type="email" placeholder="Email">
+                <label>Password*</label>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+            <button id="signin">Sign In</button>
+            <a href="https://www.overstock.com/resetRequest">Forgot your password?</a>
+        </form>
+    </div>
+    <div>
+        <div id="footerline">
+            <p>Return Policy</p>
+            <p>Contact Customer Care</p>
+            <p>FAQ</p>
+            <p>Privacy Policy</p>
+            <p>Site User Terms & Conditions*</p>
+            <p>© 2022 Overstock.com All Rights Reserved</p>
+            <p>We self-certify compliance with:</p>
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200630-intl-privacy_shield.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let form = document.querySelector("#createaccount");
+    let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        let data = {
+            email: form.email.value,
+            createpassword: form.createp.value,
+            confirmpassword: form.confirmp.value,
+        };
+        if (checkEmails(data.email) === true) {
+            if (data.createpassword == data.confirmpassword) {
+                if (ischecked() === true) {
+                    userdata.push(data);
+                    localStorage.setItem("userdata", JSON.stringify(userdata));
+                    alert("Create Account Successfully");
+                } else if (ischecked() === false) {
+                    alert("Please Checked Check Box");
+                }
+            } else if (data.createpassword !== data.confirmpassword) {
+                alert("Password Not Match")
+            }
+        } else {
+            alert("Account Already Exists");
+        }
+    })
+
+    function checkEmails(email) {
+        let filtered = userdata.filter(function(ele) {
+            return email === ele.email;
+        })
+        if (filtered.length > 0) {
+            return false;
+        } else
+            return true;
+    }
+
+    function ischecked() {
+        if (document.getElementById("accept").checked) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<script>
+    let form1 = document.querySelector("#Signinpage");
+    let userdata1 = JSON.parse(localStorage.getItem("userdata1")) || [];
+    form1.addEventListener("submit", function() {
+        let data1 = {
+            email: form1.email1.value,
+            password: form1.password.value,
+        }
+        if (checkSignin(data1.email, data1.password) === true) {
+            window.location.href = "Homepage.html";
+            localStorage.setItem("signin", JSON.stringify(data1));
+            alert("login successful");
+        } else {
+            alert("Email or Password Wrong");
+        }
+    })
+
+    function checkSignin(email, password) {
+        let filter = userdata.filter(function(ele) {
+            return ele.email === email && ele.createpassword === password;
+        })
+        if (filter.length > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>

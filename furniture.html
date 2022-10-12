@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furnitures</title>
+    <style>
+    #navbar{
+        width: 100%;
+        position: fixed;
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        background-color: rgb(235, 232, 232);
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        background-color: white;
+    }
+    #nav3 > div > a > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;   
+    }
+
+    #container{ 
+       width: 80%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(4, 430px);
+       gap: 30px;
+       margin-bottom:50px;
+   }
+   #container > div > img{
+    width: 100%;
+    height: 65%;
+   }
+
+   #container > div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   }
+   h4{
+    margin-top: 5px;
+    margin-left: 15px;
+   }
+   h4+h3{
+    margin-top: -20px;
+    margin-left: 15px;
+   }
+   #container > div > p{
+    margin-top: -15px;
+    font-size: 17px;
+    margin-left: 15px;
+   }
+   p+h4{
+    margin-top: -10px;
+    margin-bottom: 8px;
+    margin-left: 15px;   
+}
+   button{ 
+        margin-left: 15px;
+        width: 40%;
+        font-size: 15px;
+        padding: 5px; 
+        background-color: rgb(251, 87, 114);
+        border-color: transparent;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+   }
+
+   #sortsec{
+    width:80%;
+    border: 1px solid;
+    margin: auto;
+    height: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+
+   #block8{
+        width:100%;
+        height:350px;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(90, 89, 89);
+    }
+    #block8 > div{
+        width:15%;
+        height: 70%;
+        margin: auto;
+        color: white;
+        background-color: rgb(90, 89, 89);
+    }
+    #block9{
+        width:100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(61, 61, 69);
+    }
+
+    #block9 > div{
+        width:30%;
+        color: white;
+        text-align: left;
+        margin-top: 20px;
+    }
+    #block9 > div:first-child{
+       margin-left: 70px;
+    }
+    #block9 > div:last-child{
+        display: flex;
+        justify-content: space-around;
+    }
+    #block9 > div:last-child > div{
+        width: 35%;
+        height: 50%;
+        margin: auto;
+    }
+    h2{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #red >a{
+        color: red;
+    }
+
+    #filteritems{
+        margin: auto;
+        width: 75%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #filteritems > div > select {
+        width: 120%;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(251, 87, 114);
+        border: none;
+        color: white;
+
+    }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div  id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+            <a href="index.html"> <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="" width="30%"></a>
+             </div>    
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                  <div class="top"><img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"alt=""></div>
+                    <div><a href="loginpage.html">Account</a></div>
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div><a href="wishlist.html">Lists</a></div>
+                
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div><a href="addtocart.html">Cart</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <div id="filteritems">
+        <div><h2>Checkout Our Furniture Collection</h2></div>
+        <div>
+            <select id="filter"> 
+                <option value="">Category</option>
+                <option value="chair">chair</option>
+                <option value="table">table</option>
+                <option value="pouf">pouf</option>
+                <option value="tv stand">tv stand</option>
+                <option value="bookcase">bookcase</option>
+                <option value="cart">cart</option>
+            </select>
+        </div>
+    </div> 
+    <br>
+    <div id="container">
+
+    </div>
+    <h2>Next ></h2>
+    <div id="block8">
+        <div>
+            <h4>MY  ACCOUNT</h4>
+            <p>Order and returns</p>
+            <p>Email Preferences</p>
+            <p>Account settings</p>
+        </div>
+        <div>
+            <h4>LET US HELP</h4>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h4>COMPANY  INFORMATION</h4>
+            <p>About Overstock</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+        </div>
+        <div>
+            <h4>MORE WAYS TO SHOP</h4>
+            <p>Tips and Ideas</p>
+            <p>Deals</p>
+            <p>Clearances</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>Privacy Policy</div>
+            <div>Terms & conditions</div>
+            <div>*Promotion Terms</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script>
+    productdata = [
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/17156869/Chazz-Mid-century-Fabric-Dining-Chair-by-Christopher-Knight-Home-Set-of-2-4f9cd91a-9d83-4afd-aab2-684c60c0dc9b_600.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 1000",
+      title: "christopher knight home Chairs set",
+      price: "Rs 1170 (30% OFF)",
+      price2: 1170,
+      productID: "f1",
+      category: "Chair",
+      brand: "Glitzhome",
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/0708f75c9e74e04c740cebda921185eaa91d3ebf/Upholstered-Tufted-Storage-Bench.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 2000",
+      title: "phoistered tuffled storage Table",
+      price: "Rs 2860 (20% OFF)",
+      price2: 2860,
+      productID: "f2",
+      category: "Table",
+      brand: "Glitzhome",
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/5b06e61f6b2029ae7c7ce1f3eaef8111d49aadbe/AANNY-Designs-Lychee-Knitted-Cotton-Round-Pouf-Ottoman.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 5000",
+      title: "lychee knitted cotton round Pouf",
+      price: "Rs 5170 (10% OFF)",
+      price2: 5170,
+      productID: "f3",
+      category: "Pouf",
+      brand: "AANNY Designs",
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/e62c5f858340a249a2da1ee50b872dc496393358/Kaylee-Spindle-Chair-in-Fabric-with-White-Frame.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 3100",
+      title: "spindle white frame fabric Chair",
+      price: "Rs 3470 (30% OFF)",
+      price2: 3470,
+      productID: "f4",
+      category: "Chair",
+      brand: "Kaylee",
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/08b80a67acf1c5ff748b98e4c070d2f09c789764/Carson-Carrington-Telsiai-Triangle-Wood-Coffee-Table.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 4200",
+      title: "triangular wooden coffee Table",
+      price: "Rs 4700 (25% OFF)",
+      price2: 4700,
+      productID: "f5",
+      category: "Table",
+      brand: "Carson"
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/b3c7faa7a764dd22e5a2807c2b4532fd8a56f917/Colton-TV-Stand.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 4100",
+      title: "utra-tone white TV Stand",
+      price: "Rs 4070 (26% OFF)",
+      price2: 4070,
+      productID: "f6",
+      category: "TV Stand",
+      brand: "Carson"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/64f0832bd5f50800620e8e6abc28a649279bab1f/Simple-Living-Margo-Mid-Century-3-shelf-Bookshelf.jpg?imwidth=320&impolicy=medium",
+      sale: "Sale starts at INR 1100",
+      title: "margo mid-century 3-shelf Bookcase",
+      price: "Rs 1170 (34% OFF)",
+      price2: 1170,
+      productID: "f7",
+      category: "Bookcase",
+      brand: "The Gray Barn"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/20881565/The-Gray-Barn-La-Vida-5-tier-Bookcase-e79eb496-e015-428b-b3ab-8d9c26f50860_600.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 8100",
+      title: "La vida 5-tier bookcase",
+      price: "Rs 8870 (19% OFF)",
+      price2: 8870,
+      productID: "f8",
+      category: "Bookcase",
+      brand: "The Gray Barn"    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/27ea8525802c460d8ae1dbd42a7f2debe3b922bd/COZAYH-2-Piece-Coffee-Table-Set.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 7100",
+      title: "2-piece coffee Table set",
+      price: "Rs 7170 (60% OFF)",
+      price2: 7170,
+      productID: "f9",
+      category: "Table",
+      brand: "Carson"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/cf2a6a503b5f4204ee025bca374a6d5ea9817153/Carson-Carrington-Karkkila-Mid-century-Arm-Chair.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 3100",
+      title: "mid-century arm Chair",
+      price: "Rs 3170 (39% OFF)",
+      price2: 3170,
+      productID: "f10",
+      category: "Chair",
+      brand: "Kaylee"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/0fca08feca2587d3c7502ed689d8b47150a36076/Moro-Handcrafted-Cotton-Pouf-by-Christopher-Knight-Home.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 1100",
+      title: "Handcrafted modern cotton Pouf",
+      price: "Rs 1170 (50% OFF)",
+      price2: 1170,
+      productID: "f11",
+      category: "Pouf",
+      brand: "Moro"
+
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/ae19c6d18aca4f7ba8d8956a664a889885e052ed/Simple-Living-Georgia-Kitchen-Cart.jpg?imwidth=320&impolicy=medium",
+      sale: "Sale starts at INR 5300",
+      title: "Modern Georgia Kitchen Cart",
+      price: "Rs 5870 (53% OFF)",
+      price2: 5870,
+      productID: "f12",
+      category: "Cart",
+      brand: "Moro"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/efc462b5334c68a2148730f6638fc5626d702407/Maho-Golden-Teak-Outdoor-Barbeque-Cart.jpg?imwidth=320&impolicy=medium",
+      sale: "Sale starts at INR 7100",
+      title: "Golden teak outdoor bbq Cart",
+      price: "Rs 7170 (63% OFF)",
+      price2: 7170,
+      productID: "f13",
+      category: "Cart",
+      brand: "Kaylee"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/71cf67071e00ca3562810dd33fa6b5eb747ec033/Jalissa-Ombre-Cylinder-Pouf.jpg?imwidth=320&impolicy=medium",
+      sale: "Sale starts at INR 2100",
+      title: "ombre braided jute Pouf",
+      price: "Rs 2500 (76% OFF)",
+      price2: 2500,
+      productID: "f14",
+      category: "Pouf",
+      brand: "AANNY Designs"
+    },
+   {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/319d6cd5503fc97038e7c72d7d2fa88328c794f9/3-drawer-Drop-Leaf-Kitchen-Cart.jpg?imwidth=320&impolicy=medium",
+      sale: "Sale starts at INR 6100",
+      title: "3-drawer drop kitchen Cart",
+      price: "Rs 6170 (36% OFF)",
+      price2: 6170,
+      productID: "f15",
+      category: "Cart",
+      brand: "Kaylee"
+    },
+    {
+      image_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/9c79a369013b3110e16e3f086dcac8ae809875e8/Milia-Upholstered-Premium-Velvet-Dining-Chair-%28Set-of-2%29.jpg?imwidth=480&impolicy=medium",
+      sale: "Sale starts at INR 6700",
+      title: "primium velvate dining chair",
+      price: "Rs 6170 (50% OFF)",
+      price2: "6770",
+      productID: "f15",
+      category: "Chair",
+      brand: "AANNY Designs"
+    },
+]
+    
+let prod = document.getElementById("container");
+let LScart = JSON.parse(localStorage.getItem("cartpage")) || [];
+
+function displayprod(productdata)
+{
+    prod.innerHTML = "";
+    productdata.forEach (function (element) {
+        let box = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.src = element.image_url;
+
+        let sale = document.createElement("h4");
+        sale.innerText=element.sale;
+        sale.style.color = "red";
+
+        let brand = document.createElement("h3");
+        brand.innerText=element.brand;
+
+        let title = document.createElement("p");
+        title.innerText=element.title;
+
+        let price = document.createElement("h4");
+        price.innerText=element.price;
+
+        let list = document.createElement("button");
+        list.innerText = "Wishlist" ;
+        list.style.marginRight = "10px";
+        list.addEventListener("click", function()
+        {
+            if(inlist(element.productID)===true)
+            {
+                list.innerText = "Wishlisted";
+                LScart.push(element);
+                localStorage.setItem("cartpage", JSON.stringify(LScart));
+            }
+        })
+
+        let addtocart = document.createElement("button");
+        addtocart.innerText = "Add to Cart" ;
+        addtocart.style.marginRight = "10px";
+        addtocart.addEventListener("click", function()
+        {
+            if(incart(element.productID)===true)
+            {
+                alert("product added successfully.");
+                LScart.push(element);
+                localStorage.setItem("cartpage", JSON.stringify(LScart));
+            }
+            else 
+            {
+                alert("product already in the cart.")
+            }
+        })
+
+         box.append(image, sale, brand, title, price, addtocart, list);
+           prod.append(box);
+    })
+ }
+displayprod(productdata);
+
+
+function inlist(id)
+{
+for(let i=0; i<LScart.length; i++)
+{
+    if(LScart[i].productID == id) 
+    {
+        return false;
+    }
+}
+return true;
+}
+
+
+function incart(id)
+{
+for(let i=0; i<LScart.length; i++)
+{
+    if(LScart[i].productID == id) 
+    {
+        return false;
+    }
+}
+return true;
+}
+
+</script>
+
+onclick="myfunction()"

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" style="width:30px" href="https://play-lh.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" type="image/icon type">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        #navbar {
+            width: 100%;
+            margin-bottom: 50px;
+            position: fixed;
+        }
+        
+        #nav1 {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(14, 14, 14);
+            color: white;
+            font-size: 15px;
+            height: 28px;
+            padding-top: 8px;
+        }
+        
+        #nav2 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 35px;
+            background-color: rgb(235, 232, 232);
+        }
+        
+        #nav2>img {
+            width: 2%;
+        }
+        
+        #nav2>input {
+            border-radius: 30%;
+        }
+        
+        #nav3 {
+            border: 1px solid rgb(233, 230, 230);
+            display: flex;
+            background-color: white;
+        }
+        
+        #nav3>div:nth-child(1)>img {
+            width: 30%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        #nav3>div>input {
+            width: 950px;
+            font-size: 20px;
+            margin-left: -400px;
+            margin-right: 50px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            height: 30px;
+            border-radius: 6px;
+            border-color: rgb(237, 237, 237);
+        }
+        
+        #acc_section {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        #acc_section>div {
+            width: 30%;
+        }
+        
+        #acc_Section>div>img {
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        #acc_section>div>div:first-child {
+            height: 70%;
+            cursor: pointer;
+        }
+        
+        .top>img {
+            width: 50%;
+            height: 80%;
+        }
+        
+        #acc_section>div>div:last-child {
+            height: 30%;
+            margin-top: -5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        #nav4 {
+            border: 1px solid rgb(233, 230, 230);
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        
+        #nav4>div {
+            width: auto;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #red>a {
+            color: red;
+        }
+        
+        body>h1 {
+            font-size: 36px;
+            color: #2f3337;
+            margin: 20px;
+            margin-bottom: 0px;
+        }
+        
+        #Header>div>h6 {
+            font-size: 25px;
+            margin-left: 5%;
+            color: #2f3337;
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+        
+        div>ul {
+            margin-top: 1px;
+            margin-left: 20px;
+        }
+        
+        div>ul>li {
+            font-size: 16px;
+            font-weight: 400;
+            list-style-type: none;
+            margin-left: 0%;
+            height: 25px;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        div>ul>li>a {
+            color: black;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        div>ul>li:hover {
+            background-color: rgb(243, 241, 241);
+            border-left: 2px solid rgb(29, 56, 212);
+            height: 25px;
+        }
+        
+        #Header {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            width: 99%;
+        }
+        
+        @media(max-width:1024px) {
+            #Header {
+                gap: 20px;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: "a2 a3";
+                width: 99%;
+            }
+            #Header>div:nth-child(1) {
+                grid-area: a1;
+                display: none;
+            }
+            #Header>div:nth-child(2) {
+                grid-area: a2;
+            }
+            #Header>div:nth-child(3) {
+                display: grid;
+                grid-area: a3;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                justify-content: center;
+                text-align: center;
+            }
+            #Header>div:nth-child(2)>img {
+                margin-top: 35px;
+                max-width: 660px;
+                width: 100%;
+                height: 95%;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+            #textimage {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                position: absolute;
+                top: 35px;
+                margin-left: 10px;
+                background-color: #006371;
+                color: white;
+                padding: 20px;
+                max-width: 150px;
+                max-height: 170px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        #Header>div:nth-child(2)>img {
+            margin-top: 35px;
+            max-width: 660px;
+            width: 100%;
+            height: 95%;
+            cursor: pointer;
+        }
+        
+        #Header>div:nth-child(3) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            justify-content: center;
+            text-align: center;
+        }
+        
+        #Header>div:nth-child(3)>div>img:first-child {
+            margin-top: 50px;
+            max-width: 200px;
+            width: 100%;
+        }
+        
+        #Header>div:nth-child(3)>div>img:last-child {
+            max-width: 200px;
+            width: 100%;
+        }
+        
+        #Header>div:nth-child(3)>div:first-child {
+            margin-top: 35px;
+            background-color: #f5f6f7;
+            padding-top: 20px;
+            width: 100%;
+        }
+        
+        #Header>div:nth-child(3)>div:last-child {
+            margin-top: 20px;
+            background-color: #f5f6f7;
+            width: 100%;
+        }
+        
+        #Header>div:nth-child(3)>div>h1 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+        
+        #Header>div:nth-child(3)>div>h2 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        
+        #secondline {
+            gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+        }
+        
+        @media(max-width:1024px) {
+            #secondline {
+                gap: 16px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+            }
+        }
+        
+        @media(max-width:760px) {
+            #secondline {
+                gap: 16px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+            }
+        }
+        
+        .centertext {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .centertext>div div {
+            background-color: #f5f6f7;
+            cursor: pointer;
+        }
+        
+        .centertext>h2 {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        
+        #secondline>div>img {
+            max-height: 330px;
+            max-width: 330px;
+            width: 100%;
+        }
+        
+        #secondline>div p {
+            display: grid;
+            justify-content: center;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            max-height: 20px;
+            align-self: center;
+        }
+        
+        .thirdline {
+            gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 100%;
+        }
+        
+        @media(max-width:1024px) {
+            .thirdline {
+                gap: 16px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+            }
+        }
+        
+        @media(max-width:760px) {
+            .thirdline {
+                gap: 16px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+            }
+        }
+        
+        .thirdline>div>img {
+            max-height: 330px;
+            max-width: 330px;
+            width: 100%;
+        }
+        
+        .thirdline>div {
+            cursor: pointer;
+        }
+        
+        .thirdline>div p {
+            display: grid;
+            justify-content: center;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            max-height: 20px;
+            align-self: center;
+        }
+        
+        .fourthbanner {
+            gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            margin: 15px;
+            margin-top: 50px;
+        }
+        
+        @media(max-width:767px) {
+            .fourthbanner {
+                gap: 16px;
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 100%;
+                margin: 15px;
+                margin-top: 50px;
+            }
+        }
+        
+        .fourthbanner>div {
+            width: 98%;
+        }
+        
+        .fourthbanner>div>img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .fourthbanner>div>h2 {
+            width: 100%;
+            margin-top: 25px;
+            color: #2f3337;
+            cursor: pointer;
+        }
+        
+        .fourthbanner>div>p {
+            margin-top: 22px;
+            width: 97%;
+            cursor: pointer;
+            font-size: 14px;
+            color: #2f3337;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        
+        .fourthbanner>div>button {
+            margin-top: 20px;
+            padding: 14px 24px;
+            background-color: white;
+            border: 0.6px solid gray;
+            border-radius: 5px;
+            color: #2f3337;
+            cursor: pointer;
+        }
+        
+        #lastmain {
+            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+            margin: 15px;
+            margin-top: 20px;
+        }
+        
+        @media(max-width:1024px) {
+            #lastmain {
+                gap: 15px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+                margin: 15px;
+                margin-top: 20px;
+            }
+        }
+        
+        @media(max-width:760px) {
+            #lastmain {
+                gap: 15px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+                margin: 15px;
+                margin-top: 20px;
+            }
+        }
+        
+        @media(max-width:599px) {
+            #lastmain {
+                gap: 15px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+                margin: 15px;
+                margin-top: 20px;
+            }
+        }
+        
+        #heading>h2 {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #lastmain>div>img {
+            max-width: 180px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        #lastmain>div {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            margin-top: 0px;
+        }
+        
+        #div8 {
+            background-color: #545658;
+            color: white;
+            padding: 50px 0px 0px 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+        }
+        
+        #div8>div>p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        #div8>div>p:first-child {
+            font-size: 14px;
+        }
+        
+        #div8>div {
+            padding-bottom: 30px;
+        }
+        
+        #div8>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #block9 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            background-color: rgb(61, 61, 69);
+        }
+        
+        #block9>div:first-child {
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-top: 17px;
+            margin-right: 30%;
+            width: 30%;
+            color: white;
+        }
+        
+        #block9>div:last-child {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        #block9>div>p {
+            font-size: 12px;
+        }
+        
+        #block9>div>div {
+            font-size: 12px;
+            margin-top: 20px;
+            color: white;
+            margin-left: 20px;
+            display: flex;
+        }
+        
+        #block9>div>div>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #block9>div>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #block9>div>div>div>p {
+            margin-top: -1px;
+        }
+        
+        #lastindia>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #lastindia>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                    <div>Account</div>
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div>Lists</div>
+
+                </div>
+                <div>
+                    <div class="top"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div>Cart</div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+    <br><br><br>
+    <div id="container"></div>
+    <h1>Home Improvement</h1>
+    <div>
+        <div id="Header">
+            <div>
+                <h6>Featured Categories</h6>
+                <ul>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Lighting</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Bathroom Vanities</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Storage & Organization</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Faucets</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Flooring</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Major Appliances</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Showers</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Hardware</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Sinks</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Outdoor Home Care</a>
+                    </li>
+                    <li class="">
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Electrical</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Tools</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Heating & Cooling</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Vacuums & Floor Care</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Toilets</a>
+                    </li>
+                    <li>
+                        <a href="//www.overstock.com/c/bedding/bedding-sets?t=276">Shop Home Improvement on Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="showtext">
+                <img src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_HOMEIMPROVEMENT_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="">
+
+            </div>
+            <div>
+                <div>
+                    <h1>Outdoor</h1>
+                    <h2>Organization</h2>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_HOMEIMP_MM_012.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_HOMEIMP_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+                    <h1>Double Vanities</h1>
+                    <h2>For Shared Bathrooms</h2>
+                </div>
+            </div>
+        </div>
+        <div class="centertext">
+            <h2>Bathroom & Kitchen Renovation Essentials</h2>
+            <div id="secondline">
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_1.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Bathroom Vanities</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_10.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Showers</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_2.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Bathtubs</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_11.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Toilets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-bathroom-PopCat_5.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Vanity Mirrors</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_3.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Bathroom Sinks</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-bathroom-PopCat_7.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Bathroom Faucets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-bathroom-PopCat_8.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Bathroom Hardware</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_14.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Kitchen Faucets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_13.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Kitchen Sinks</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_19.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Kitchen Cabinets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-kitchen-PopCat_4.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Backsplash Tile</p>
+                </div>
+            </div>
+        </div>
+        <div class="centertext">
+            <h2>Home Renovation Essentials</h2>
+            <div class="thirdline">
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-home-PopCat_1.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Lighting & Ceiling Fans</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_17.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Flooring</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-home-PopCat_3.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Major Appliances</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-home-PopCat_4.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Storage & Organization</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_16.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Cabinet Hardware</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-home-PopCat_6.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Wallpaper</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/09202021_HomeImprovement_DOORS.jpeg?imwidth=400&impolicy=medium" alt="">
+                    <p>Doors</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-home-PopCat_8.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Tile</p>
+                </div>
+            </div>
+        </div>
+        <div class="centertext">
+            <h2>Outdoor Renovation Essentials</h2>
+            <div class="thirdline">
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-outdoor-PopCat_1.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Outdoor Storage & Sheds</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_26.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Decking</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-outdoor-PopCat_3.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Outdoor Lighting</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_22.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Firepits & Chimineas</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-outdoor-PopCat_5.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Gazebos & Pergolas</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-outdoor-PopCat_6.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Gardening</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_28.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Yard Care Tools</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_24.jpg?imwidth=400&impolicy=medium" alt="">
+                    <p>Garage Storage</p>
+                </div>
+            </div>
+        </div>
+        <div class="fourthbanner">
+            <div>
+                <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_HOMEIMP_BG01.jpg?imwidth=1024&impolicy=medium" alt="">
+            </div>
+            <div>
+                <h2>Bathroom Paint Ideas</h2>
+                <p>From compact half-baths to luxurious master attachments, bathrooms offer the chance to experiment with color. Find the best paint for your bathroom with these popular bathroom paint colors.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="fourthbanner">
+            <div>
+                <h2>How to Style Dining Room Wallpaper</h2>
+                <p>Dining rooms aren't usually where you find bold prints and patterns. So when you’re working with wallpaper designs for your dining room, there are a few things to keep in mind. Whether you're installing a vibrant print or looking for ways
+                    to style around one that's already in your home, read on for five expert tips on rocking wallpaper in your dining room.</p>
+                <button>Read More</button>
+            </div>
+            <div>
+                <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_HOMEIMP_BG02.jpg?imwidth=1024&impolicy=medium" alt="">
+            </div>
+        </div>
+        <div id="heading">
+            <h2>Shop More Home Improvement</h2>
+            <div id="lastmain">
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular14.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Hardware</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular15.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Doors & Windows</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-219x219_shop_more03.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Fencing & Privacy Screens</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular17.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Wall Coverings</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular2.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Showerheads</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-219x219_shop_more06.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Kitchen & Pantry Storage</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular16.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Power Tools</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-219x219_shop_more08.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Bathroom Shelving</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-219x219_shop_more09.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Heating & Cooling</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular3.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Bidets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular1.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Sink & Faucet Sets</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular5.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Plumbing</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular7.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Ranges & Ovens</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular8.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Range Hoods</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular11.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Air Quality</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-175x175_otherPopular12.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Vacuums</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/02182021-gnp-homeimprovement-219x219_shop_more17.jpg?imwidth=200&impolicy=medium" alt="">
+                    <p>Sauna & Steam</p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg" alt="">
+                    <p>Shop All Home Improvement on Sale</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div8">
+        <div>
+            <p>MY ACCOUNT</p>
+            <p>Orders & Returns</p>
+            <p>
+                <a href="https://www.overstock.com/5522/static.html">Email Preferences</a>
+            </p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <p>LET US HELP</p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+            </p>
+            <p>
+                <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/accessibility">Accessibility</a>
+            </p>
+        </div>
+        <div>
+            <p>COMPANY INFORMATION</p>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain Transparency</p>
+        </div>
+        <div>
+            <p>MORE WAYS TO SHOP</p>
+            <p>Tips & Ideas</p>
+            <p>Deals
+            </p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & conditions</a>
+            </div>
+            <div>
+                <a href="https://www.overstock.com/88255/static.html">*Promotion Terms</a>
+            </div>
+            <div id="lastindia">
+                <div>
+                    <p>
+                        <a href="https://www.overstock.com/intlcountryselect">Ship to:</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

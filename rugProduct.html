@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #products{
+        width:60%;
+        margin:auto;
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows: auto;
+         gap:20px;
+         /* border: 1px solid red; */
+         text-align: center;
+         margin-top: 50px;
+        
+      }
+
+
+      #products>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+      }
+      #products>div>img{
+        width:100%;
+      }
+      button{
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        background-color:#FB5772;
+        border-radius: 5px;
+        border:1px solid transparent;
+      }
+      
+      #navbar{
+        width: 100%;
+        /* border: 1px solid red; */
+        position:sticky;
+        top:0px;
+        background-color: white;
+      
+        
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        /* background-color: rgb(235, 232, 232); */
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        /* justify-content:; */
+    }
+    #nav3 > div:nth-child(1) > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+        /* border: 1px solid blue; */
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        /* border: 1px solid blue; */
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+        /* border: 1px solid; */
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+        /* border: 1px solid green; */
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        /* border: 1px solid red; */
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+        /* border: 1px solid red; */
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;
+       
+    }
+    #sort {
+      margin-top: 50px;
+    }
+   
+    
+   
+    </style>
+</head>
+<body>
+ 
+  
+  <div id="navbar">
+      <div id="nav1">
+          <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+      </div>
+      <div  id="nav2">
+          <label for="">Ships to:</label>
+          <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+          <label for="">India</label>
+      </div>
+      <div id="nav3">
+          <div>
+              <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
+          </div>
+          <div>
+              <input type="text" placeholder="search">
+          </div>
+          <div id="acc_section">
+              <div>
+                  <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                  <div>Account</div>
+              </div>
+              <div>
+                  <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                  <div>Lists</div>
+              
+              </div>
+              <div>
+                  <div class="top" id="cartlogo"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                  <div><a href="cart.html">Cart</a></div>
+              </div>
+          </div>
+      </div>
+      <div id="nav4">
+          <div>Furniture</div>
+          <div>Rugs</div>
+          <div>Decor</div>
+          <div>Bedding</div>
+          <div>Home Improvement</div>
+          <div>Kitchen</div>
+          <div>Outdoor</div>
+          <div>Lighting</div>
+          <div>Kids & Baby</div>
+          <div>More</div>
+          <div>Ideas</div>
+          <div style="color:red;">Sales & Deals</div>
+      </div>
+  </div>
+  <div id="sort">
+    <select name="" id="sortByPrice">
+      <option value="All">All Products</option>
+      <option value="LowPrice">Price Low to High</option>
+      <option value="HighPrice">Price High To low</option>
+  </select>
+  <select name="" id="sortByName">
+    <option value="All">All Products</option>
+    <option value="Ascending">A to Z</option>
+    <option value="Descending">Z to A</option>
+</select>
+  </div>
+ 
+    <div id="products">
+
+    </div>
+</body>
+</html>
+
+<script>
+       productData=[
+    {
+   
+    name: "SAFAVIEH Adirondack Vera",
+    price: "2110",
+    
+    productID: "rug1",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/57e55b6b50af4de47b5b254913333668cb30dec4/SAFAVIEH-Adirondack-Vera-Modern-Ombre-Distressed-Stripe-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "SAFAVIEH Vision Tansa Modern Ombre Tonal Rug",
+    price: "2146",
+   
+    productID: "rug2",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/d950985f7bfbf01e5970f6103eaf917c55432fe8/SAFAVIEH-Vision-Tanasa-Modern-Ombre-Tonal-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+    
+    name: "SAFAVIEH Tulum Bora Moroccan Boho Chic Area Rug",
+    price: "2286",
+    
+    productID: "rug3",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/cd29d00fd173b45bcd9d95ae3c483aa2de38b390/SAFAVIEH-Tulum-Bora-Moroccan-Boho-Chic-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+  
+    name: "SAFAVIEH Madison Diederike Boho Distressed Medallion Area Rug",
+    price: "2250",
+   
+    productID: "rug4",
+
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/709fee12c5b7e2b834fe98b74814982b8b9a1d15/SAFAVIEH-Madison-Diederike-Boho-Medallion-Distressed-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+  
+    name: "SAFAVIEH Madison Loane Modern Abstract Rug",
+    price: "2076",
+    
+    productID: "rug5",
+ 
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/689687797ec974d679e489dd81cc23da84bcc6b3/SAFAVIEH-Madison-Loane-Modern-Abstract-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+    
+    name: "nuLOOM Wynn Braided Indoor/Outdoor Area Rug",
+    price: "2991",
+   
+    productID: "rug6",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/6743ce0acd8cab270fd283311e5fc023542621b4/nuLOOM-Wynn-Braided-Indoor-Outdoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+    
+    name: "SAFAVIEH California Shag Izat 2- inch Thick Area Rug",
+    price: "2991",
+  
+    productID: "rug7",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/fa0de7e5f6db966631851fdd3f058a6b965ff170/SAFAVIEH-California-Shag-Izat-2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+  
+    name: "Artistic Weavers Tiffany Grey Bohemian Border Area Rug",
+    price: "4053",
+    
+    productID: "rug8",
+    
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/f74e954e877f9e9201d2698b9a9d8b75e99c84a9/The-Curated-Nomad-Tiffany-Bohemian-Border-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "Alexander Home Isabelle Traditional Printed Area Rug",
+    price: "3669",
+   
+    productID: "rug9",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/1c9f01a5d19453e2cff0b4fa297e1822242ec376/Alexander-Home-Isabelle-Traditional-Printed-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "SAFAVIEH Madison Snowflake Medallion Rustic Farmhouse Distressed Rug",
+    price: "2151",
+   
+    productID: "rug10",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/f3740e332b1b54bfccec1ee81ca045074a93a275/SAFAVIEH-Madison-Snowflake-Medallion-Rustic-Farmhouse-Distressed-Rug.jpg?imwidth=480&impolicy=medium"
+  },
+  {
+ 
+    name: "SAFAVIEH Madison Avery Boho Chic Distressed Area Rug",
+    price: "2363",
+  
+    productID: "rug11",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/205c6208408054a206a0a9fa356db59c208345f9/SAFAVIEH-Madison-Avery-Boho-Chic-Distressed-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+    
+    name: "nuLOOM Moroccan Blythe Boho Trellis Area Rug",
+    price: "2321",
+   
+    productID: "rug12",
+    
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/16cb8a4b0c88ab9dd9d67af84e6f647e79e65b33/The-Curated-Nomad-Ashbury-Moroccan-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "William Rustic Vintage Area Rug",
+    price: "4902",
+
+    productID: "rug13",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/7906b5e28144d04122d3a68c1af627287a112d7d/William-Rustic-Vintage-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+ 
+    name: "Cooke Industrial Abstract Area Rug",
+    price: "3969",
+   
+    productID: "rug14",
+ 
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/ee563f66d29011407267d11c5563efe2d1f3df78/Cooke-Industrial-Abstract-Polyester-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+ 
+    name: "SAFAVIEH Florida Shag Sigtraud Abstract Waves 1.2-inch Area Rug",
+    price: "3872",
+   
+    productID: "rug15",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/44d606cf7157741e1e1e4d6b1ec3989ada1d44b1/SAFAVIEH-Florida-Shag-Sigtraud-Abstract-Waves-1.2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+    
+    name: "Unique Loom Solid Shag Area Rug",
+    price: "2321",
+   
+    productID: "rug16",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/0015ec3aa861777d253848466a37ba212e5bf79e/Unique-Loom-Solid-Shag-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+
+    name: "Kredelle Faded Persian Medallion Area Rug",
+    price: "10275",
+   
+    productID: "rug17",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/6881afbc1a05c08f8c3b1ebf714c2be783a344a2/Kredelle-Faded-Persian-Medallion-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+  
+    name: "balck bella",
+    price: "2955",
+   
+    productID: "rug18",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/956be53c5ee357088cba69050f50cf3199d30e30/SAFAVIEH-Natural-Fiber-Pacific-Casual-Border-Sisal-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "Unique Loom Casino Sofia Vintage Distressed Oriental Area Rug",
+    price: "2490",
+   
+    productID: "rug19",
+   
+    img: "https://ak1.ostkcdn.com/images/products/16306945/Unique-Loom-Casino-Sofia-Area-Rug-4fdd94e4-86e1-47cc-bcaa-6dd8ae90840f_600.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "nuLOOM Handwoven Reversible Jute and Cotton Area Rug",
+    price: "3131",
+   
+    productID: "rug20",
+    
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/6a511996dd2a84d753373817847f2ad544ca63ac/nuLOOM-Handwoven-Reversible-Jute-and-Cotton-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "SAFAVIEH Horizon Shag Mukades 2.6-inch Thick Rug",
+    price: "3362",
+   
+    productID: "rug21",
+  
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/82c014c1d0e9a3c59bd26ff6afed5bd8177cf9c0/SAFAVIEH-Horizon-Shag-Mukades-2.6-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "Martinque Borders Navy Indoor/Outdoor Area Rug",
+    price: "3025",
+  
+    productID: "rug22",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/859839907fefe4feab22c56fc3518bbbb088be99/The-Curated-Nomad-Wilson-Borders-Navy-Indoor-Outdoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+
+    name: "SAFAVIEH Madison Liboria Modern Abstract Rug",
+    price: "2626",
+  
+    productID: "rug23",
+   
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/147536133f867969897adc5c75ccc99e25c63522/SAFAVIEH-Madison-Liboria-Modern-Abstract-Rug.jpg?imwidth=480&impolicy=medium"
+  },
+  {
+   
+    name: "SAFAVIEH Courtyard Vickie Indoor/ Outdoor Waterproof Patio Backyard Rug",
+    price: "2448",
+   
+    productID: "rug24",
+    
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/942768b65b094e652b191a695b027a98f8537c3e/SAFAVIEH-Courtyard-Vickie-Indoor--Outdoor-Patio-Backyard-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+  {
+   
+    name: "Miranda Haus Floral Patchwork Area Rug",
+    price: "1947",
+   
+    productID: "rug25",
+ 
+    img: "https://ak1.ostkcdn.com/images/products/is/images/direct/cbe9681a6910db3abb8859a838e21d61e41b85dc/Miranda-Haus-Modern-Floral-Patchwork-Polypropylene-Indoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+  },
+]
+
+let  productcont= document.getElementById('products')
+
+let filter= document.getElementById('filter');
+let cartLS= JSON.parse( localStorage.getItem("cart")) || [];     
+
+
+function displayProducts(productData){
+    productcont.innerHTML="";
+   productData.forEach(function(element){
+      let product=document.createElement('div');
+
+      let image=document.createElement('img');
+         image.src=element.img;
+      let name=document.createElement('p');
+      name.innerText=element.name;
+     
+
+      let price=document.createElement('p');
+      price.innerText=element.price;
+
+
+      let addToCart=document.createElement('button');
+      addToCart.innerText="Add To Cart";
+      addToCart.addEventListener("click",function(){
+            if( addToCartfunc(element.productID)==true){
+                alert("Product Added Successfully")
+                cartLS.push(element)
+                localStorage.setItem("cart",JSON.stringify(cartLS))
+               
+            }else{
+                alert("Product Already in the cart")
+            }
+      })
+
+        product.append(image,name,price,addToCart)
+      productcont.append(product)
+   }) 
+}
+
+ displayProducts(productData)
+
+
+function addToCartfunc(id){
+    for(let i=0;i<cartLS.length;i++){
+        if(cartLS[i].productID==id){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+document.querySelector("#sortByPrice").addEventListener("change",function1)
+
+function function1(){
+
+let selected=document.querySelector("#sortByPrice").value;
+if(selected=="All"){
+  window.location.reload()
+}
+if(selected=="LowPrice"){
+  productData.sort(function(a,b){
+    return a.price-b.price
+  })
+  displayProducts(productData)
+}
+if(selected=="HighPrice"){
+  productData.sort(function(a,b){
+    return b.price-a.price
+  })
+  displayProducts(productData)
+}
+}
+
+
+
+document.querySelector("#sortByName").addEventListener("change", nameFun)
+
+function nameFun(){
+let selected=document.querySelector("#sortByName").value;
+if(selected=="All"){
+  window.location.reload();
+}
+if(selected=="Ascending"){
+  productData.sort(function(a,b){
+    if(a.name>b.name) return 1;
+    if(a.name<b.name) return -1;
+    return 0;
+  })
+  displayProducts(productData)
+}
+
+if(selected=="Descending"){
+  productData.sort(function(a,b){
+    if(a.name>b.name) return -1;
+    if(a.name<b.name) return 1;
+    return 0;
+  })
+  displayProducts(productData)
+}
+}
+
+
+
+
+
+
+
+ document.querySelector('#cartlogo').addEventListener("click",function(){
+  window.location.href="cart1.html"
+ })
+
+
+
+</script>

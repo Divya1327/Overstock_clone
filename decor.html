@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding:15px 0px;
+    border: none;
+}
+
+      #div1>div>  p{
+          cursor: pointer; 
+          font-size: 20px; 
+           padding:5px ;
+           margin-top:-20px; 
+          
+        }
+        #div1>div>  p:hover{
+            background-color:#f9fafb;
+        }
+        #div1{
+            display: flex;
+            width:90%;
+            margin:auto;
+        }
+        #div1>div:nth-child(1){
+            /* background-color:gray; */
+            margin-right: 10px;
+            width:25%;
+            /* border:1px solid black; */
+        }
+        #div1>div>p:last-child{
+            font-weight: bold;
+            color:#c7202c;
+        }
+        #div1>div:nth-child(2){
+       width:50%;
+       margin-right: 20px;
+       /* border:1px solid black; */
+        }
+        #div1>div:nth-child(2)>img{
+            width:100%;
+            /* height:100%; */
+            cursor: pointer;
+        }
+        #div1>div:nth-child(3){
+            width:22.5%;
+            text-align: center;
+            /* border:1px solid red */
+        }
+        #div1>div:nth-child(3)>div>p{
+           
+           font-size: 30px;
+           margin-bottom: -20px;
+       }
+        #div1>div:nth-child(3)>div:nth-child(1){
+            border:1px solid transparent;
+            height: 50%;
+            background-color: #cee8ff;
+            margin-bottom: 10px;
+        }
+        #div1>div:nth-child(3)>div:nth-child(1)>img{
+            width:100%;
+            cursor: pointer;
+        }
+        #div1>div:nth-child(3)>div:nth-child(2)>img{
+            width:100%;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        #div1>div:nth-child(3)>div:nth-child(2){
+       background-color:#eaeaea;
+       border:1px solid transparent;
+       height: 48%;
+
+        }
+        div+h2{
+    text-align: center;
+    margin:50px 
+}
+     
+#div2{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+     }
+     /* #div2>div{
+        border: 1px solid black;
+     } */
+     #div2>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+     #div5{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+    /* #div5>div>img{
+        width:100%;
+        cursor: pointer;
+     } */
+        
+     #div6{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:10px;
+     }
+     /* #div6>div{
+        border: 1px solid black;
+     }
+     #div5>div{
+        border: 1px solid black;
+     } */
+     #div5>div:nth-child(1)>img{
+        width:100%
+     }
+     #div6>div:nth-child(2)>img{
+        width:100%
+     }
+   /* #div6>div>  button{
+    width:30%
+   } */
+   p+button{
+    width:15%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+   }
+
+#div3{
+        width:90%;
+        /* height: 100px; */
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+     }
+     /* #div3>div{
+        border: 1px solid black;
+     } */
+     #div3>div>img{
+        width:100%;
+        cursor: pointer;
+     }
+
+     #div8{
+         background-color:#545658; 
+      color:white;
+
+        /* border: 1px solid red; */
+        display: grid;
+        padding: 50px 0px 0px 80px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+     }
+     /* #div8>div{
+
+        border:1px solid black;
+        
+     } */
+     #rugs{
+        padding-top: 200px;
+        margin-left: 75px;
+        
+        
+     }#navbar{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        position:fixed;
+    }
+
+    #nav1{
+        margin: auto;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        font-size: 15px;
+        height: 28px;
+        padding-top: 8px;
+    }
+
+    #nav2{
+        border: 1px solid rgb(233, 230, 230);
+        height: 35px;
+        background-color: rgb(235, 232, 232);
+    }
+    #nav2 > img {
+        width: 2%;   
+ 
+    }
+    #nav2 > input {
+        border-radius: 30%;  
+    }
+
+    #nav3{
+        border: 1px solid rgb(233, 230, 230);
+        display: flex;
+        background-color: white;
+    }
+    #nav3 > div:nth-child(1) > img{
+        width: 30%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #nav3 >div > input{
+        width:1100px;
+        font-size: 20px;
+        margin-left: -400px;
+        margin-right: 50px;
+        margin-top:25px;
+        margin-bottom: 20px;
+        height:30px;
+        border-radius: 6px;
+        border-color: rgb(237, 237, 237);
+    }
+    #acc_section{
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    #acc_section > div{
+      
+        width: 30%;
+    }
+    #acc_Section > div > img{
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #acc_section > div >div:first-child{
+        height: 70%;
+        cursor: pointer;
+    }
+    .top > img{
+        width: 50%;
+        height: 80%;
+      
+    }
+    #acc_section > div >div:last-child{
+
+        height: 30%;
+        margin-top: -5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #nav4{
+        border: 1px solid rgb(233, 230, 230);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #nav4 > div{
+        width: auto;
+        padding: 5px;
+        cursor: pointer;   
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+        
+    </style>
+</head>
+<body>
+
+
+    <div id="navbar">
+        <div id="nav1">
+            <label for="">Sign up to receive our latest deals and get a 10% off coupon.</label>
+        </div>
+        <div id="nav2">
+            <label for="">Ships to:</label>
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/640px-Flag_of_India.svg.png" width="25" height="20">
+            <label for="">India</label>
+        </div>
+        <div id="nav3">
+            <div>
+                <a href="homepage.html"> <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="" width="30%"></a>
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+            <div id="acc_section">
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
+                    <div><a href="loginpage.html">Account</a></div>
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div><a href="wishlist.html">Lists</a></div>
+
+                </div>
+                <div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div><a href="cart.html">Cart</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black">Kids & Baby</div>
+            <div style="color:black">More</div>
+            <div style="color:black">Ideas</div>
+            <div id="red">Sales & Deals</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1 id="rugs">Home Decor</h1>
+    <div id="div1">
+        <div>
+       <h2>Featured Categories</h2>
+        <p id="p">Fireplaces</p>
+        <p>Window Treatments</p>
+        <p>Mirrors</p>
+        <p>Wall Art</p>
+        <p>Wall Decor</p>
+        <p>Throw Pillows</p>
+        <p>Cecoratives Accessories</p>
+        <p>Accent Pieces</p>
+        <p>Lighting</p>
+        <p>Doormats</p>
+        <p>Outdoor Decor</p>
+        <p>Rugs</p>
+        <p>Slipcovers & Furniture Covers</p>
+        <p>Shop All Home Decor on Sale</p>
+     
+ </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="">
+        </div>
+        <div>
+            <div>
+                <p>Need Inspiration?</p>
+                <h1>Virtual Showroom</h1>
+                <img src="https://ak1.ostkcdn.com/img/mxc/2022-04-12-temporary-virtual-showcase.png?imwidth=384" alt="">
+            </div>
+           <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+          <p>Save on</p>
+          <h1>Rug Deals</h1>
+        </div>
+           
+        </div>
+    </div>
+    <h2>Popular Home Decor Categories</h2>
+    <div id="div2">
+
+    </div>
+    <div id="div5">
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_688x444_BG01.jpg?imwidth=1024&impolicy=medium" alt=""></div>
+        <div>
+        <h2>Biophilic Design: How to Restore Nature to Your Home</h2>
+        <p>If any design trend proves that your surroundings can improve your well-being, it’s biophilic interior design. This life-loving approach to decorating uses natural elements to restore your sense of wellness. Here are 10 easy, impactful ways to refresh your interior with resemblances to the great outdoors.</p>
+       <button>Read More</button>
+    </div>
+       
+    </div>
+    
+    <div id="div6">
+        <div>
+        
+            <h2>How to Decorate with a Monochromatic Color Scheme</h2>
+            <p>With a simple color palette leading the way, monochromatic design lets you get creative with textures, designs, and contrast. Take a look at three different rooms where we let one color take the wheel and show you how to create a monochromatic design in your own home.</p>
+           <button>Read More</button></div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_688x444_BG02.jpg?imwidth=1024&impolicy=medium" alt="">
+    </div >
+       
+    </div>
+    <h2>Shop More Home Decor</h2>
+    <div id="div3">
+
+    </div>
+    <div id="div8">
+        <div>
+            <p>MY ACCOUNT</p>
+            <p>Orders & Returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <p>LET US HELP</p>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <p>COMPANY INFORMATION</p>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain Transparency</p>
+        </div>
+        <div>
+            <p>MORE WAYS TO SHOP</p>
+            <p>Tips & Ideas</p>
+            <p>Deals
+            </p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+     decorData=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_1.jpg?imwidth=400&impolicy=medium",
+            button:"Outdoor Decor"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_2.jpg?imwidth=400&impolicy=medium",
+            button:"Mirrors"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_3.jpg?imwidth=400&impolicy=medium",
+            button:"Window Treatments"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_4.jpg?imwidth=400&impolicy=medium",
+            button:"Wall Art"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_5.jpg?imwidth=400&impolicy=medium",
+            button:"Throw Pillows"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_6.jpg?imwidth=400&impolicy=medium",
+            button:"Wall Decor"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_7.jpg?imwidth=400&impolicy=medium",
+            button:"Decorative Accessories"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_8.jpg?imwidth=400&impolicy=medium",
+            button:"Accent Pieces"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_9.jpg?imwidth=400&impolicy=medium",
+            button:"Lightning"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_10.jpg?imwidth=400&impolicy=medium",
+            button:"Rugs"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_11.jpg?imwidth=400&impolicy=medium",
+            button:"Slipcovers & Furniture Covers"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_12.jpg?imwidth=400&impolicy=medium",
+            button:"Indoor Fireplaces"
+        },
+    ]
+
+    decorData2=[
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular1.jpg?imwidth=200&impolicy=medium",
+            button:"Ceiling Lights"
+        },
+    
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular2.jpg?imwidth=200&impolicy=medium",
+            button:"Lamps"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular3.jpg?imwidth=200&impolicy=medium",
+            button:"Flush Mounts"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular4.jpg?imwidth=200&impolicy=medium",
+            button:"Wall Lights"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular5.jpg?imwidth=200&impolicy=medium",
+            button:"Ceiling Fans"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular6.jpg?imwidth=200&impolicy=medium",
+            button:"Blinds & Shades"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular7.jpg?imwidth=200&impolicy=medium",
+            button:"Curtain Rods & Hardware"
+        },
+        
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular8.jpg?imwidth=200&impolicy=medium",
+            button:"Clocks"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular9.jpg?imwidth=200&impolicy=medium",
+            button:"Decorative Shelves"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular10.jpg?imwidth=200&impolicy=medium",
+            button:"Silk Pants"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular11.jpg?imwidth=200&impolicy=medium",
+            button:"Vases"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular12.jpg?imwidth=200&impolicy=medium",
+            button:"Picture Frames & Albums"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular13.jpg?imwidth=200&impolicy=medium",
+            button:"Door Mats"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular14.jpg?imwidth=200&impolicy=medium",
+            button:"Canvas Art"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular15.jpg?imwidth=200&impolicy=medium",
+            button:"Prints"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular16.jpg?imwidth=200&impolicy=medium",
+            button:"Fire Pits & Chimineas"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular17.jpg?imwidth=200&impolicy=medium",
+            button:"Planters, Hangers, & Stands"
+        },
+        {
+            img:"https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg",
+            button:"Shop All Home Decor on Sale"
+        }
+      
+    ]
+
+     displayDecor(decorData)
+    function displayDecor(data){
+     decorData.forEach(function(el){
+        let div2 = document.querySelector('#div2');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+}
+
+displayHomeDecor(decorData2)
+    function displayHomeDecor(data){
+     decorData2.forEach(function(el){
+        let div2 = document.querySelector('#div3');
+        
+        let div = document.createElement('div');
+        let image = document.createElement('img');
+        image.src=el.img
+        let butto = document.createElement('button');
+        butto.innerText=el.button;
+        div.append(image,butto)
+         div2.append(div)
+     })
+}
+ 
+</script>
